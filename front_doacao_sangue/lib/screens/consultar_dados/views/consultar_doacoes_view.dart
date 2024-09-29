@@ -43,7 +43,7 @@ class ConsultarDoacoesView extends ConsumerWidget {
                             : "Veja abaixo as doações cadastradas no sistema"),
                     ...(data.first as List<Doacoes>).map((confia) {
                       final doador = (data[2] as List<Doadores>)
-                          .where((e) => e.codTipoSanguineo == confia.codDoador)
+                          .where((e) => e.codDoador == confia.codDoador)
                           .firstOrNull;
                       final tipoSanguineo = (data[1] as List<TiposSanguineos>)
                           .where((e) =>
