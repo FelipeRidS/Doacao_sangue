@@ -1,0 +1,1 @@
+ C:\\Users\\felip\\OneDrive\\Documentos\\trabalho_ban_2\\front_doacao_sangue\\.dart_tool\\flutter_build\\3cfd1a6d141ae52afc1345411be20ed2\\native_assets.yaml: 

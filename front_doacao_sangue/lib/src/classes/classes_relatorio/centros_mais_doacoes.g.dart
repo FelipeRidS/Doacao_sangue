@@ -1,0 +1,25 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'centros_mais_doacoes.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$CentrosMaisDoacoesImpl _$$CentrosMaisDoacoesImplFromJson(
+        Map<String, dynamic> json) =>
+    _$CentrosMaisDoacoesImpl(
+      nomeLocal: json['nomeLocal'] as String,
+      endereco: json['endereco'] as String,
+      qtdRegistros: (json['qtdRegistros'] as num).toInt(),
+      qtdMls: json['qtdMls'] as String,
+    );
+
+Map<String, dynamic> _$$CentrosMaisDoacoesImplToJson(
+        _$CentrosMaisDoacoesImpl instance) =>
+    <String, dynamic>{
+      'nomeLocal': instance.nomeLocal,
+      'endereco': instance.endereco,
+      'qtdRegistros': instance.qtdRegistros,
+      'qtdMls': instance.qtdMls,
+    };
