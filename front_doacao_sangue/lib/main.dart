@@ -4,7 +4,7 @@ import 'package:front_doacao_sangue/screens/menu/menu_screen.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 late final Dio dio;
-const baseUrl = "http://192.168.4.241:3000";
+const baseUrl = "http://localhost:3000";
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   dio = Dio();

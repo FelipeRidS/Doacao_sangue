@@ -14,7 +14,7 @@ class _RetiradasDeSangueRest implements RetiradasDeSangueRest {
     this.baseUrl,
     this.errorLogger,
   }) {
-    baseUrl ??= 'http://192.168.4.241:3000';
+    baseUrl ??= 'http://localhost:3000';
   }
 
   final Dio _dio;
