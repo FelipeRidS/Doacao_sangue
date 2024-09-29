@@ -12,16 +12,22 @@ const connection = mysql.createConnection({
     database: 'SistemaDoacao'
 });
 
-// Conectar ao banco de dados
 connection.connect(error => {
     if (error) {
         console.error('Erro ao conectar ao banco de dados:', error);
         return;
     }
     console.log('Conectado ao banco de dados MySQL.');
+
+    connection.query('SET FOREIGN_KEY_CHECKS=0', (err, results) => {
+        if (err) {
+            console.log('Erro ao desativar verificações de chave estrangeira:', err);
+        } else {
+            console.log('Verificações de chave estrangeira desativadas.');
+        }
+    });
 });
 
-// Importar e usar as rotas
 app.use('/tipos-sanguineos', require('./routes/tiposSanguineos')(connection));
 app.use('/funcionarios', require('./routes/funcionarios')(connection));
 app.use('/doadores', require('./routes/doadores')(connection));
